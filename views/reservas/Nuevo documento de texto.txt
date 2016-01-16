@@ -1,0 +1,24 @@
+html
+  body
+    h1
+      | Guardar reserva
+      br
+      br
+      form(method='post', action='#{}')
+        label Nombre
+        br
+        input(type='text', name='nombre', required='required', value='#{reserva.}')
+        br
+        label Apellido
+        br
+        input(type='text', name='apellido', required='required', value='#{reserva.}')
+        br
+        label Comensales
+        br
+        input(type='text', name='comensales', required='required', value='#{reserva.}')
+        br
+        label Observaciones
+        br
+        br
+        input(type='submit', value='Guardar')
+        input(type='reset', value='Limpiar')
